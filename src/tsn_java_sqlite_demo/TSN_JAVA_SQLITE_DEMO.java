@@ -17,7 +17,7 @@ public class TSN_JAVA_SQLITE_DEMO {
 
             statement.executeUpdate("drop table if exists person"); // Удаляем таблицу person, если она существует
             statement.executeUpdate("create table person (id integer, name string)"); // Создаем таблицу person
-            statement.executeUpdate("insert into person values(1, 'Sergey')"); // Добавляем запись в таблицу person
+            statement.executeUpdate("insert into person values(1, 'Сергей')"); // Добавляем запись в таблицу person
             statement.executeUpdate("insert into person values(2, 'Neo')"); // Добавляем запись в таблицу person
             ResultSet rs = statement.executeQuery("select * from person"); // Выполняем запрос к таблице person
             while (rs.next()) { // Перебираем все записи
